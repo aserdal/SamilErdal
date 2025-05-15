@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kitap Tahmin Oyunu</title>
+  <link rel="stylesheet" href="kitapdunyasi.css" />
+</head>
+<body>
+    
+  <header>
+    <h1>📚 Kitap Dünyası</h1>
+    <p>Kelimelerin Büyülü Dünyasına Hoş Geldiniz</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Anasayfa</a>
+
+    <div class="dropdown">
+      <a href="kategoriler.html">Kategoriler ▾</a>
+      <div class="dropdown-content">
+        <a href="roman.html">Roman</a>
+        <a href="siir.html">Şiir</a>
+        <a href="cocuk.html">Çocuk Kitapları</a>
+        <a href="bilim.html">Bilim</a>
+      </div>
+    </div>
+
+    <a href="yazarlar.html">Yazarlar</a>
+    <a href="oyun.html">Oyun</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+
+  <section class="oyun-bolumu">
+    <h2>Kitap Tahmin Oyunu</h2>
+    <p id="question">Yükleniyor...</p>
+    <div id="options" class="options"></div>
+    <p id="result"></p>
+    <button onclick="nextQuestion()">Sonraki Soru</button>
+  </section>
+
+  <script src="basitoyun.js"></script>
+</body>
+</html>
