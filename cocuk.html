@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Çocuk Kitapları - Kitap Dünyası</title>
+  <link rel="stylesheet" href="kitapdunyasi.css">
+</head>
+
+<body>
+
+  <header>
+    <h1> Kitap Dünyası</h1>
+    <p>Kelimelerin Büyülü Dünyasına Hoş Geldiniz</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Anasayfa</a>
+
+    <div class="dropdown">
+      <a href="kategoriler.html">Kategoriler ▾</a>
+      <div class="dropdown-content">
+        <a href="roman.html">Roman</a>
+        <a href="siir.html">Şiir</a>
+        <a href="cocuk.html">Çocuk Kitapları</a>
+        <a href="bilim.html">Bilim</a>
+      </div>
+    </div>
+
+    <a href="yazarlar.html">Yazarlar</a>
+     <a href="oyun.html">Oyun</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+
+  <main>
+    
+
+    <h3>En Sevilen Çocuk Kitapları</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Kitap Adı</th>
+          <th>Yazar</th>
+          <th>Yaş Grubu</th>
+          <th>Sayfa Sayısı</th>
+          <th>Fiyat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Küçük Prens</td>
+          <td>Antoine de Saint-Exupéry</td>
+          <td>8+</td>
+          <td>96</td>
+          <td>40₺</td>
+        </tr>
+        <tr>
+          <td>Mavi Balina</td>
+          <td>Ayşe Nur Tekin</td>
+          <td>6-8</td>
+          <td>32</td>
+          <td>40 ₺</td>
+        </tr>
+        <tr>
+          <td>Meraklı Kuş</td>
+          <td>Ahmet Özdemir</td>
+          <td>3-5</td>
+          <td>24</td>
+          <td>50 ₺</td>
+        </tr>
+        <tr>
+          <td>Uçan Sınıf</td>
+          <td>Erich Kästner</td>
+          <td>10+</td>
+          <td>176</td>
+          <td>69₺</td>
+        </tr>
+        <tr>
+          <td>Beyaz Diş</td>
+          <td>Jack London</td>
+          <td>12+</td>
+          <td>224</td>
+          <td>72 ₺</td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    <div class="form-container">
+      <h3>Ebeveyn ve Eğitimciler için Çocuk Kitapları Rehberi</h3>
+      <p>Size özel çocuk kitapları rehberi için aşağıdaki formu doldurun:</p>
+      <form action="cocuk_rehberi.php" method="post">
+        <div class="form-group">
+          <label for="name">Ad Soyad:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-posta:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+       
+        <div class="form-group">
+        </div>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="newsletter" value="yes" checked>
+            Çocuk kitapları ve etkinlikleri ile ilgili bültenler almak istiyorum.
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="terms" required>
+            Gizlilik politikasını okudum ve kabul ediyorum.
+          </label>
+        </div>
+        <button type="submit">Rehber İsteği Gönder</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+     
+    </div>
+    <p>&copy; 2025 Kitap Dünyası - Tüm Hakları Saklıdır</p>
+  </footer>
+
+</body>
+
+</html>

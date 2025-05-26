@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Şiir Kategorisi - Kitap Dünyası</title>
+  <link rel="stylesheet" href="kitapdunyasi.css">
+</head>
+
+<body>
+
+  <header>
+    <h1> Kitap Dünyası</h1>
+    <p>Kelimelerin Büyülü Dünyasına Hoş Geldiniz</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Anasayfa</a>
+
+    <div class="dropdown">
+      <a href="kategoriler.html">Kategoriler ▾</a>
+      <div class="dropdown-content">
+        <a href="roman.html">Roman</a>
+        <a href="siir.html">Şiir</a>
+        <a href="cocuk.html">Çocuk Kitapları</a>
+        <a href="bilim.html">Bilim</a>
+      </div>
+    </div>
+
+    <a href="yazarlar.html">Yazarlar</a>
+    <a href="oyun.html">Oyun</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+
+  <main>
+
+
+
+
+    <h3>Öne Çıkan Şiir Kitapları</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Kitap Adı</th>
+          <th>Şair</th>
+          <th>Sayfa Sayısı</th>
+          <th>Yayınevi</th>
+          <th>Fiyat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>İnsan Manzaraları</td>
+          <td>Nazım Hikmet</td>
+          <td>420</td>
+          <td>Türk Klasikleri</td>
+          <td>95 ₺</td>
+        </tr>
+        <tr>
+          <td>Bütün Şiirleri</td>
+          <td>Cemal Süreya</td>
+          <td>312</td>
+          <td>Modern Şiir</td>
+          <td>82 ₺</td>
+        </tr>
+        <tr>
+          <td>Yapraklar</td>
+          <td>Walt Whitman</td>
+          <td>256</td>
+          <td>Dünya Şiiri</td>
+          <td>78₺</td>
+        </tr>
+        <tr>
+          <td>Şairin Son Türküsü</td>
+          <td>Elif Deniz</td>
+          <td>128</td>
+          <td>Yeni Şiir</td>
+          <td>55₺</td>
+        </tr>
+        <tr>
+          <td>Kargaşanın Şiiri</td>
+          <td>Ahmet Erhan</td>
+          <td>142</td>
+          <td>Türk Şiiri</td>
+          <td>63 ₺</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <div class="form-container">
+      <h3>Şiir Etkinlikleri ve Buluşmaları</h3>
+      <p>Şiir etkinliklerimizden haberdar olmak için kaydolun:</p>
+      <form action="siir_etkinlik.php" method="post">
+        <div class="form-group">
+          <label for="name">Ad Soyad:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-posta:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="interest">İlgilendiğiniz Şiir Türleri:</label>
+          <select id="interest" name="interest" multiple>
+            <option value="turk">Türk Şiiri</option>
+            <option value="dunya">Dünya Şiiri</option>
+            <option value="cagdas">Çağdaş Şiir</option>
+            <option value="lirik">Lirik Şiir</option>
+            <option value="epik">Epik Şiir</option>
+            <option value="serbest">Serbest Vezin</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="participation" value="yes">
+            Şiir okuma etkinliklerine katılmak istiyorum.
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="terms" required>
+            Gizlilik politikasını okudum ve kabul ediyorum.
+          </label>
+        </div>
+        <button type="submit">Kaydol</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kitap Dünyası - Tüm Hakları Saklıdır</p>
+  </footer>
+
+</body>
+
+</html>

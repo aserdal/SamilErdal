@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roman Kategorisi - Kitap Dünyası</title>
+  <link rel="stylesheet" href="kitapdunyasi.css">
+</head>
+
+<body>
+
+  <header>
+    <h1> Kitap Dünyası</h1>
+    <p>Kelimelerin Büyülü Dünyasına Hoş Geldiniz</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Anasayfa</a>
+
+    <div class="dropdown">
+      <a href="kategoriler.html">Kategoriler ▾</a>
+      <div class="dropdown-content">
+        <a href="roman.html">Roman</a>
+        <a href="siir.html">Şiir</a>
+        <a href="cocuk.html">Çocuk Kitapları</a>
+        <a href="bilim.html">Bilim</a>
+      </div>
+    </div>
+
+    <a href="yazarlar.html">Yazarlar</a>
+     <a href="oyun.html">Oyun</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+
+  <main>
+
+
+    <h3>Öne Çıkan Roman Kitapları</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Kitap Adı</th>
+          <th>Yazar</th>
+          <th>Sayfa Sayısı</th>
+          <th>Yayınevi</th>
+          <th>Fiyat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Suç ve Ceza</td>
+          <td>Fyodor Dostoyevski</td>
+          <td>687</td>
+          <td>Dünya Klasikleri</td>
+          <td>110 ₺</td>
+        </tr>
+        <tr>
+          <td>1984</td>
+          <td>George Orwell</td>
+          <td>352</td>
+          <td>Modern Klasik</td>
+          <td>90₺</td>
+        </tr>
+        <tr>
+          <td>Beyaz Geceler</td>
+          <td>Fyodor Dostoyevski</td>
+          <td>172</td>
+          <td>Dünya Klasikleri</td>
+          <td>65 ₺</td>
+        </tr>
+        <tr>
+          <td>Sineklerin Tanrısı</td>
+          <td>William Golding</td>
+          <td>262</td>
+          <td>Modern Klasik</td>
+          <td>72₺</td>
+        </tr>
+        <tr>
+          <td>Tutunamayanlar</td>
+          <td>Oğuz Atay</td>
+          <td>724</td>
+          <td>Türk Edebiyatı</td>
+          <td>135 ₺</td>
+        </tr>
+        <tr>
+          <td>Simyacı</td>
+          <td>Paulo Coelho</td>
+          <td>184</td>
+          <td>Dünya Edebiyatı</td>
+          <td>60 ₺</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <div class="form-container">
+      <h3>Roman Önerileri</h3>
+      <p>Okumaktan keyif aldığınız bir romanı paylaşın, diğer okuyucularla buluşturalım:</p>
+      <form action="roman_oneri.php" method="post">
+        <div class="form-group">
+          <label for="book_name">Kitap Adı:</label>
+          <input type="text" id="book_name" name="book_name" required>
+        </div>
+        <div class="form-group">
+          <label for="author">Yazar:</label>
+          <input type="text" id="author" name="author" required>
+        </div>
+        <div class="form-group">
+          <label for="subgenre">Alt Kategori:</label>
+          <select id="subgenre" name="subgenre">
+            <option value="klasik">Klasik</option>
+            <option value="cagdas">Çağdaş</option>
+            <option value="polisiye">Polisiye</option>
+            <option value="tarih">Tarihi</option>
+            <option value="ask">Aşk</option>
+            <option value="bilimkurgu">Bilim Kurgu</option>
+            <option value="diger">Diğer</option>
+          </select>
+        </div>
+        <div class="form-group">
+        </div>
+        <div class="form-group">
+          <label for="email">E-posta:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <button type="submit">Öneri Gönder</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      
+    </div>
+    <p>&copy; 2025 Kitap Dünyası - Tüm Hakları Saklıdır</p>
+  </footer>
+
+</body>
+
+</html>
